@@ -7,10 +7,9 @@ sequenceDiagram
 
     navegador->>servidor: POST https://studies.cs.helsinki.fi/exampleapp/new_note
     activate servidor
+    Note right of servidor: el servidor crea un objeto nota con lo ingresado en el campo de texto del form y lo agrega a un arreglo de notas que no se persiste
     servidor->>navegador: 302 Found Location: /exampleapp/notes
     deactivate servidor
-
-    Note right of servidor: el servidor crea un objeto nota con lo ingresado en el campo de texto del form y lo agrega a un arreglo de notas que no se persiste
 
     navegador->>servidor: GET https://studies.cs.helsinki.fi/exampleapp/notes
     activate servidor
