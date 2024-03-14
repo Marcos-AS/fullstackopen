@@ -1,5 +1,5 @@
 # ej0.4
-
+```mermaid
 sequenceDiagram
 	participant navegador
     participant servidor
@@ -34,3 +34,4 @@ sequenceDiagram
     activate servidor
     servidor->>navegador: archivo JSON
     deactivate servidor
+```
